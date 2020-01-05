@@ -21,13 +21,16 @@ class ViewController: NSViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        BK.security.config = (.des(mode: .ecb), "33253E97AADD6F2E", "33253E97AADD6F2E")
 
-        
-        let file = "/Users/harvey/Downloads/video/96橋本ありな"
-        let size = file.bk.file.size
-        
-        BKLog(size.byte, size.kb, size.mb, size.gb)
-        BKLog(size.byte, size.kb.bk.truncate(3), size.mb.bk.truncate(3), size.gb.bk.truncate(3))
+        let file = "XHZ+3Y4JaX3Y1JKtMRMLFuZrOLunNcnOuDnynfVhKUgW8Zss/x3luA=="
+        BKLog(file.bk.decrypt(.gb18030))
+//
+//        let size = file.bk.file.size
+//
+//        BKLog(size.byte, size.kb, size.mb, size.gb)
+//        BKLog(size.byte, size.kb.bk.truncate(3), size.mb.bk.truncate(3), size.gb.bk.truncate(3))
 
         //let file = URL(string: "/Users/harvey/Downloads/333.gg.nenew.mp4")!
         //BKLog([file.bk.file.name, file.bk.file.nameWithSuffix, file.bk.file.suffix(), file.bk.file.suffix(true)])

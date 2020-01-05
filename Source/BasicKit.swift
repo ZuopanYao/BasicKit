@@ -35,6 +35,7 @@ public struct BK {
         
     public static let app = BKApp()
     public static let notify = BKNotify()
+    public static let security = BKSecurity.shared
     
     /// 通过 BKLog 打印的
     public static let logger = BKConsole.shared

@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		62071906E875C210DFCAE879 /* Pods_BasicKit_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C43B8CD3C57F4E5C17E4AD7C /* Pods_BasicKit_iOS.framework */; };
 		B454A56B042AD3EA8C59B4BE /* Pods_BasicKit_Example_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E5AE1B107E1B50B7744511F /* Pods_BasicKit_Example_iOS.framework */; };
+		B90E172023C227F100AA85E2 /* BKSecurityCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B90E171E23C227F100AA85E2 /* BKSecurityCore.swift */; };
+		B90E172123C227F100AA85E2 /* BKSecurityCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B90E171E23C227F100AA85E2 /* BKSecurityCore.swift */; };
+		B90E172223C227F100AA85E2 /* BKSecurity.swift in Sources */ = {isa = PBXBuildFile; fileRef = B90E171F23C227F100AA85E2 /* BKSecurity.swift */; };
+		B90E172323C227F100AA85E2 /* BKSecurity.swift in Sources */ = {isa = PBXBuildFile; fileRef = B90E171F23C227F100AA85E2 /* BKSecurity.swift */; };
 		B97D7DB023BEBB3100B44267 /* BasicKit_iOS.h in Headers */ = {isa = PBXBuildFile; fileRef = B97D7DAE23BEBB3100B44267 /* BasicKit_iOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B97D7DC923BEBC6100B44267 /* BKUpgrade.swift in Sources */ = {isa = PBXBuildFile; fileRef = B97D7DB623BEBC6100B44267 /* BKUpgrade.swift */; };
 		B97D7DCA23BEBC6100B44267 /* BKApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B97D7DB723BEBC6100B44267 /* BKApp.swift */; };
@@ -116,6 +120,8 @@
 		7B85065FA441F41D7F67562D /* Pods-BaseKit-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseKit-iOS.release.xcconfig"; path = "Target Support Files/Pods-BaseKit-iOS/Pods-BaseKit-iOS.release.xcconfig"; sourceTree = "<group>"; };
 		7E5AE1B107E1B50B7744511F /* Pods_BasicKit_Example_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BasicKit_Example_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAF2C1131050B7564805D500 /* Pods-BaseKit-Example-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseKit-Example-iOS.release.xcconfig"; path = "Target Support Files/Pods-BaseKit-Example-iOS/Pods-BaseKit-Example-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		B90E171E23C227F100AA85E2 /* BKSecurityCore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BKSecurityCore.swift; sourceTree = "<group>"; };
+		B90E171F23C227F100AA85E2 /* BKSecurity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BKSecurity.swift; sourceTree = "<group>"; };
 		B97D7DAC23BEBB3100B44267 /* BasicKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BasicKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B97D7DAE23BEBB3100B44267 /* BasicKit_iOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BasicKit_iOS.h; sourceTree = "<group>"; };
 		B97D7DAF23BEBB3100B44267 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -270,6 +276,8 @@
 				B97D7DB723BEBC6100B44267 /* BKApp.swift */,
 				B97D7DB823BEBC6100B44267 /* BKScreen.swift */,
 				B97D7DB923BEBC6100B44267 /* BKNetwork.swift */,
+				B90E171E23C227F100AA85E2 /* BKSecurityCore.swift */,
+				B90E171F23C227F100AA85E2 /* BKSecurity.swift */,
 				B97D7DBA23BEBC6100B44267 /* BKCacher.swift */,
 				B9A44ECC23C0FAD500AE7308 /* BKNotify.swift */,
 				B9A44ED223C1018500AE7308 /* BKConsole.swift */,
@@ -598,6 +606,7 @@
 				B97D7DD923BEBC6100B44267 /* BKObject.swift in Sources */,
 				B9A44ECD23C0FAD500AE7308 /* BKNotify.swift in Sources */,
 				B97D7E1C23BF21FF00B44267 /* Dictionary.swift in Sources */,
+				B90E172023C227F100AA85E2 /* BKSecurityCore.swift in Sources */,
 				B97D7DD223BEBC6100B44267 /* Number.swift in Sources */,
 				B97D7DD323BEBC6100B44267 /* String.swift in Sources */,
 				B97D7DCD23BEBC6100B44267 /* BKCacher.swift in Sources */,
@@ -611,6 +620,7 @@
 				B97D7DCB23BEBC6100B44267 /* BKScreen.swift in Sources */,
 				B97D7DD123BEBC6100B44267 /* Data.swift in Sources */,
 				B9A44ED323C1018500AE7308 /* BKConsole.swift in Sources */,
+				B90E172223C227F100AA85E2 /* BKSecurity.swift in Sources */,
 				B97D7DCF23BEBC6100B44267 /* BKDevice.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -641,6 +651,7 @@
 				B9A44EBD23C0DF4700AE7308 /* Number.swift in Sources */,
 				B9A44ECE23C0FAD500AE7308 /* BKNotify.swift in Sources */,
 				B9A44EB823C0DF4300AE7308 /* BKCacher.swift in Sources */,
+				B90E172123C227F100AA85E2 /* BKSecurityCore.swift in Sources */,
 				B9A44EB523C0DF4300AE7308 /* BKApp.swift in Sources */,
 				B9A44EBE23C0DF4700AE7308 /* Dictionary.swift in Sources */,
 				B9A44EB723C0DF4300AE7308 /* BKNetwork.swift in Sources */,
@@ -654,6 +665,7 @@
 				B9A44EC323C0DF4B00AE7308 /* BKObject.swift in Sources */,
 				B9A44EBC23C0DF4700AE7308 /* Data.swift in Sources */,
 				B9A44ED423C1018500AE7308 /* BKConsole.swift in Sources */,
+				B90E172323C227F100AA85E2 /* BKSecurity.swift in Sources */,
 				B9A44EBA23C0DF4300AE7308 /* BKDevice.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -929,10 +941,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "BasicKit-Example-macOS/BasicKit-Example-macOSDebug.entitlements";
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 3M8YBU8YTC;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = "BasicKit-Example-macOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -940,9 +952,9 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
-				PRODUCT_BUNDLE_IDENTIFIER = "top.yaozuopan.top.macOS.BaseKit-Example-macOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "top.yaozuopan.macOS.BaseKit-Example-macOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE_SPECIFIER = "top.yaozuopan.macOS.*";
 				SDKROOT = macosx;
 				SWIFT_VERSION = 5.0;
 			};

@@ -186,7 +186,7 @@ public extension BasicKit where Base == String {
     /// 转换处理
     var transform: String.BK_transform { String.BK_transform(self.base) }
 }
- 
+
 
 public extension BasicKit where Base == String {
     
@@ -194,8 +194,35 @@ public extension BasicKit where Base == String {
 }
 
 public extension BasicKit where Base == String {
-
+    
     func writer(_ encoding: String.Encoding = .utf8) -> Data.BK_Writer {
         Data.BK_Writer(base.bk.dataValue(encoding))
+    }
+}
+
+public extension String.Encoding {
+    
+    private static func convertEncoding(_ from: CFStringEncodings) -> String.Encoding {
+        
+        let stringEncoding = CFStringConvertEncodingToNSStringEncoding(UInt32(from.rawValue))
+        return String.Encoding(rawValue: stringEncoding)
+    }
+    
+    /// GB2312
+    static var gb2312: String.Encoding {
+        
+        return convertEncoding(.GB_2312_80)
+    }
+    
+    /// 向下兼容 GB2312
+    static var gbk: String.Encoding {
+        
+        return convertEncoding(.GBK_95)
+    }
+    
+    /// 与 GB2312和 GBK 兼容
+    static var gb18030: String.Encoding {
+        
+        return convertEncoding(.GB_18030_2000)
     }
 }
