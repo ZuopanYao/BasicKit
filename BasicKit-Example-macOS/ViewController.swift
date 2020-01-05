@@ -13,8 +13,11 @@ extension BKNotify.Name {
     static let myname = BKNotify.Name("ddkkdkd")
 }
 
-class Model: Codable {
-    var name: String = "yaoyao"
+class Model: BKType, Codable {
+    
+    var name: String = ""
+    var age: Int = 0
+    var address: String = ""
 }
 
 class ViewController: NSViewController {
@@ -22,10 +25,25 @@ class ViewController: NSViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        BK.security.config = (.des(mode: .ecb), "33253E97AADD6F2E", "33253E97AADD6F2E")
+        let model = Model()
+        model.name = "yaozuo"
+        model.age = 10
+        model.address = "0000000"
+        
+        BKLog(model.bk.json())
+        
+        let json = "{\"name\":\"yaozuo\",\"age\":10,\"address\":\"0000000\"}"
+        
+        BKLog(Model.bk.fromJSON(data: json.bk.dataValue())?.address)
+        BKLog(Model.bk.fromJSON(string: json)?.address)
+        
+//        model.bk.
+//        BKLog(model.bk.json())
+        
+        //BK.security.config = (.des(mode: .ecb), "33253E97AADD6F2E", "33253E97AADD6F2E")
 
-        let file = "XHZ+3Y4JaX3Y1JKtMRMLFuZrOLunNcnOuDnynfVhKUgW8Zss/x3luA=="
-        BKLog(file.bk.decrypt(.gb18030))
+        //let file = "XHZ+3Y4JaX3Y1JKtMRMLFuZrOLunNcnOuDnynfVhKUgW8Zss/x3luA=="
+        //BKLog(file.bk.decrypt(.gb18030))
 //
 //        let size = file.bk.file.size
 //

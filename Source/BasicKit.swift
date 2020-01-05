@@ -116,3 +116,4 @@ extension Float: BasicKitCompatible { }
 extension Double: BasicKitCompatible { }
 extension Array: BasicKitCompatible { }
 extension URL: BasicKitCompatible { }
+extension BKType: BasicKitCompatible { }
