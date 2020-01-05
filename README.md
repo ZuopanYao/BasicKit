@@ -1,6 +1,6 @@
 # BaseKit
 
-将一些常用的功能：md5、Base64、App基本信息、数据缓存、模型数据持久性以及对Array、Dictionary、URL、String、基本数据类型进行封装起来，可运行在iOS、macOS上的基本库
+MD5、Base64、数据缓存、app更新、app基本信息获取封装以及对Array、Dictionary、URL、String、基本数据类型等进行常用扩展，可运行在iOS、macOS上的基本库
 
 [![Platform](https://img.shields.io/cocoapods/p/BaseKit.svg?style=flat)](https://github.com/ZuopanYao/BaseKit)
 [![Cocoapods Compatible](https://img.shields.io/cocoapods/v/BaseKit.svg)](https://cocoapods.org/pods/BaseKit)
