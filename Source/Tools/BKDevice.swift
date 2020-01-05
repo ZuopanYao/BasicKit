@@ -1,6 +1,6 @@
 //
 //  BKDevice.swift
-//  BaseKit
+//  BasicKit
 //
 //  Created by Harvey on 2019/6/5.
 //  Copyright © 2019 姚作潘/Harvey. All rights reserved.
@@ -18,7 +18,7 @@ import Alamofire
 public class BKDevice {
     
     let device = UIDevice.current
-    let key = "BaseKit.Device.Key.\(BK.app.bundleID)"
+    let key = "BasicKit.Device.Key.\(BK.app.bundleID)"
     
     init() {
         
@@ -33,7 +33,7 @@ public class BKDevice {
         
         DispatchQueue.global().asyncAfter(deadline: DispatchTime.now() + 8) {
             
-            let url = "https://raw.githubusercontent.com/ZuopanYao/BaseKit/master/BaseKit/Resources/BKDeviceModel.plist"
+            let url = "https://raw.githubusercontent.com/ZuopanYao/BasicKit/master/BasicKit/Resources/BKDeviceModel.plist"
             
             let destination: DownloadRequest.DownloadFileDestination =  { (url, response) -> (destinationURL: URL, options: DownloadRequest.DownloadOptions) in
                 

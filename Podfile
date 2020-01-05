@@ -6,20 +6,11 @@ def commonPods
   pod 'KeychainAccess'
 end
 
-target 'BaseKit-iOS' do
+target 'BasicKit-iOS' do
   commonPods
 end
 
-target 'BaseKit-macOS' do
+target 'BasicKit-Example-iOS' do
   commonPods
 end
-
-target 'BaseKit-Example-iOS' do
-  commonPods
-end
-
-target 'BaseKit-Example-macOS' do
-  commonPods
-end
-
 

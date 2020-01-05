@@ -1,6 +1,6 @@
 //
 //  String.swift
-//  BaseKit
+//  BasicKit
 //
 //  Created by Harvey on 2019/6/5.
 //  Copyright © 2019 姚作潘/Harvey. All rights reserved.
@@ -10,7 +10,7 @@ import Foundation
 import CommonCrypto
 
 // MARK: - Base64
-public extension BaseKit where Base == String {
+public extension BasicKit where Base == String {
     
     func dataValue(_ encoding: String.Encoding = .utf8) ->  Data {
         return  base.data(using: encoding) ?? Data()
@@ -23,7 +23,7 @@ public extension BaseKit where Base == String {
 }
 
 // MARK: - 类型转换
-public extension BaseKit where Base == String {
+public extension BasicKit where Base == String {
     
     struct Value {
         
@@ -38,11 +38,11 @@ public extension BaseKit where Base == String {
         public var bool: Bool { return Bool(base) ?? false }
     }
     
-    var value: BaseKit<String>.Value { return Value(self.base) }
+    var value: BasicKit<String>.Value { return Value(self.base) }
 }
 
 // MARK: - 一些常用功能
-public extension BaseKit where Base == String {
+public extension BasicKit where Base == String {
     
     /// 判断字符串中是否含有中文字符
     ///
@@ -139,7 +139,7 @@ public extension String {
 }
 
 /// md5
-public extension BaseKit where Base == String {
+public extension BasicKit where Base == String {
     
     var md5: String.BK_MD5 { return String.BK_MD5(base) }
 }
@@ -181,19 +181,19 @@ public extension String {
     }
 }
 
-public extension BaseKit where Base == String {
+public extension BasicKit where Base == String {
     
     /// 转换处理
     var transform: String.BK_transform { String.BK_transform(self.base) }
 }
  
 
-public extension BaseKit where Base == String {
+public extension BasicKit where Base == String {
     
     var file: URL.BK_File { URL.BK_File(URL(fileURLWithPath: base)) }
 }
 
-public extension BaseKit where Base == String {
+public extension BasicKit where Base == String {
 
     func writer(_ encoding: String.Encoding = .utf8) -> Data.BK_Writer {
         Data.BK_Writer(base.bk.dataValue(encoding))

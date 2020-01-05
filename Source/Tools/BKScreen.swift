@@ -1,6 +1,6 @@
 //
 //  BKScreen.swift
-//  BaseKit
+//  BasicKit
 //
 //  Created by Harvey on 2019/6/7.
 //  Copyright © 2019 姚作潘/Harvey. All rights reserved.

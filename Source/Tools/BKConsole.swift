@@ -1,6 +1,6 @@
 //
 //  BKConsole.swift
-//  BaseKit
+//  BasicKit
 //
 //  Created by Harvey on 2019/6/10.
 //  Copyright © 2019 姚作潘/Harvey. All rights reserved.
@@ -11,7 +11,7 @@ import Foundation
 /// 自定义打印函数
 func BKLogv(_ items: Any..., file: String = #file, method: String = #function, line: Int = #line) {
     
-    var string = "[BaseKit] \(BKConsole.shared.dateString) in \(file.split(separator: "/").last!) \(method) [Line \(line)]:\n"
+    var string = "[BasicKit] \(BKConsole.shared.dateString) in \(file.split(separator: "/").last!) \(method) [Line \(line)]:\n"
     print(string, terminator: "")
     
     for item in items {
@@ -72,7 +72,7 @@ public class BKConsole {
     }
 }
 
-/// BaseKit 自定义打印函数
+/// BasicKit 自定义打印函数
 public func BKLog(_ items: Any..., file: String = #file, method: String = #function, line: Int = #line) {
     
     var string = "\(BKConsole.shared.dateString) in \(file.split(separator: "/").last!) \(method) [Line \(line)]:\n"

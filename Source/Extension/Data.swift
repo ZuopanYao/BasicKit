@@ -1,6 +1,6 @@
 //
 //  Data.swift
-//  BaseKit
+//  BasicKit
 //
 //  Created by Harvey on 2019/6/5.
 //  Copyright © 2019 姚作潘/Harvey. All rights reserved.
@@ -40,7 +40,7 @@ public extension Data {
     }
 }
 
-public extension BaseKit where Base == Data {
+public extension BasicKit where Base == Data {
     
     func stringValue(_ encoding: String.Encoding = .utf8) ->  String {
         return String(data: self.base, encoding: encoding) ?? ""
@@ -51,7 +51,7 @@ public extension BaseKit where Base == Data {
 }
 
 /// md5
-public extension BaseKit where Base == Data {
+public extension BasicKit where Base == Data {
    
     func md5(_ encoding: String.Encoding = .utf8) -> String.BK_MD5 {
         return String.BK_MD5(base.bk.stringValue(encoding))
@@ -76,7 +76,7 @@ public extension Data {
     }
 }
 
-public extension BaseKit where Base == Data {
+public extension BasicKit where Base == Data {
     
     var writer: Data.BK_Writer { Data.BK_Writer(base) }
 }

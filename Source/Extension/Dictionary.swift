@@ -1,6 +1,6 @@
 //
 //  File.swift
-//  BaseKit-Example-iOS
+//  BasicKit-Example-iOS
 //
 //  Created by Harvey on 2020/1/3.
 //  Copyright © 2020 姚作潘/Harvey. All rights reserved.

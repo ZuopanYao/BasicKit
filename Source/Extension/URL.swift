@@ -1,6 +1,6 @@
 //
 //  URL.swift
-//  BaseKit
+//  BasicKit
 //
 //  Created by Harvey on 2020/1/5.
 //  Copyright © 2020 姚作潘/Harvey. All rights reserved.
@@ -90,7 +90,7 @@ public extension URL {
     }
 }
 
-public extension BaseKit where Base == URL {
+public extension BasicKit where Base == URL {
     
     var file: URL.BK_File { URL.BK_File(base) }
 }

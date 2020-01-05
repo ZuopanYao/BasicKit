@@ -1,6 +1,6 @@
 //
 //  BKCacher.swift
-//  BaseKit
+//  BasicKit
 //
 //  Created by Harvey on 2018/5/9.
 //  Copyright © 2018年 Harvey. All rights reserved.

@@ -1,6 +1,6 @@
 //
 //  Number.swift
-//  BaseKit
+//  BasicKit
 //
 //  Created by Harvey on 2019/3/2.
 //  Copyright © 2019 https://www.yaozuopan.top. All rights reserved.
@@ -15,7 +15,7 @@ extension Int: NumberProtocol { }
 extension Float: NumberProtocol { }
 extension Double: NumberProtocol { }
 
-public extension BaseKit where Base == Int {
+public extension BasicKit where Base == Int {
     
     /// 随机生成无符号 Int
     ///
@@ -26,7 +26,7 @@ public extension BaseKit where Base == Int {
     }
 }
 
-public extension BaseKit where Base == Float {
+public extension BasicKit where Base == Float {
     
     /// 随机生成无符号 Float
     ///
@@ -42,7 +42,7 @@ public extension BaseKit where Base == Float {
     }
 }
 
-public extension BaseKit where Base == Double {
+public extension BasicKit where Base == Double {
     
     /// 随机生成无符号 Double
     ///

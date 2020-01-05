@@ -1,6 +1,0 @@
-framework module Pods_BaseKit_iOS {
-  umbrella header "Pods-BaseKit-iOS-umbrella.h"
-
-  export *
-  module * { export * }
-}

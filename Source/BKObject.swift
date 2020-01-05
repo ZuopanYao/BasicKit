@@ -1,6 +1,6 @@
 //
 //  BKObject.swift
-//  BaseKit
+//  BasicKit
 //
 //  Created by Harvey on 2019/6/6.
 //  Copyright © 2019 姚作潘/Harvey. All rights reserved.
@@ -77,7 +77,7 @@ extension Array where Element == Data {
     }
 }
 
-public extension BaseKit where Base: BKObject {
+public extension BasicKit where Base: BKObject {
     
     private var key: BK.Key { return BK.Key("\(Base.self)") }
     private static var key: BK.Key { return BK.Key("\(Base.self)") }

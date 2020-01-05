@@ -1,6 +1,6 @@
 //
 //  BKApp.swift
-//  BaseKit
+//  BasicKit
 //
 //  Created by Harvey on 2019/6/5.
 //  Copyright © 2019 姚作潘/Harvey. All rights reserved.
@@ -11,7 +11,7 @@ import StoreKit
 
 extension BK.Key {
     
-    static let firstEnterKey = BK.Key("BaseKit.App.First.Enter.Key")
+    static let firstEnterKey = BK.Key("BasicKit.App.First.Enter.Key")
 }
 
 public class BKApp {
