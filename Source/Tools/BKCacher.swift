@@ -11,7 +11,7 @@ import Foundation
 /// 持久性数据缓存管理，先写到内存中，再写到磁盘中
 public class BKStorage {
     
-    public static let shared = BKCacher(.storage)
+    static let shared = BKCacher(.storage)
 }
 
 public class BKCacher {
@@ -26,7 +26,7 @@ public class BKCacher {
     }
     
     /// 临时数据高速缓存管理, 崩溃或重启数据丢失
-    public static let shared = BKCacher(.cache)
+    static let shared = BKCacher(.cache)
     
     private let policy: Policy
     init(_ policy: Policy) { self.policy = policy }

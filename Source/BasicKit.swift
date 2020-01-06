@@ -36,6 +36,7 @@ public struct BK {
     public static let app = BKApp()
     public static let notify = BKNotify()
     public static let security = BKSecurity.shared
+    public static let qr = BKQR.shared
     
     /// 通过 BKLog 打印的
     public static let logger = BKConsole.shared
@@ -108,6 +109,19 @@ public extension BasicKitCompatible {
     }
 }
 
+
+#if os(macOS)
+
+import AppKit
+public typealias Color = NSColor
+
+#else
+
+import UIKit
+public typealias Color = UIColor
+
+#endif
+
 extension String: BasicKitCompatible { }
 extension Data: BasicKitCompatible { }
 extension BKObject: BasicKitCompatible { }
@@ -117,3 +131,4 @@ extension Double: BasicKitCompatible { }
 extension Array: BasicKitCompatible { }
 extension URL: BasicKitCompatible { }
 extension BKType: BasicKitCompatible { }
+extension Color: BasicKitCompatible { }

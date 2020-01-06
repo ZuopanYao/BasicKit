@@ -1,7 +1,8 @@
 #platform :ios, '10.0'
 
+use_frameworks!
+
 def commonPods
-  use_frameworks!
   pod 'Alamofire'
   pod 'KeychainAccess'
 end
@@ -12,5 +13,10 @@ end
 
 target 'BasicKit-Example-iOS' do
   commonPods
+  pod 'ElegantSnap'
+end
+
+target 'BasicKit-Example-macOS' do
+  pod 'ElegantSnap'
 end
 

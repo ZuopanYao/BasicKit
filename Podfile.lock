@@ -1,20 +1,28 @@
 PODS:
   - Alamofire (4.9.1)
+  - ElegantSnap (1.0.2):
+    - SnapKit
   - KeychainAccess (4.1.0)
+  - SnapKit (5.0.1)
 
 DEPENDENCIES:
   - Alamofire
+  - ElegantSnap
   - KeychainAccess
 
 SPEC REPOS:
   trunk:
     - Alamofire
+    - ElegantSnap
     - KeychainAccess
+    - SnapKit
 
 SPEC CHECKSUMS:
   Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  ElegantSnap: ed1ee2c9b194a546ad5ac88f4f91a00cfe164c5a
   KeychainAccess: 445e28864fe6d3458b41fa211bcdc39890e8bd5a
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
 
-PODFILE CHECKSUM: f31f548ea6400c636c7baa7e6bcf05bf7ecaacce
+PODFILE CHECKSUM: 7c3c7947499cf4ac5d1f14e81d7ce914964ac4c8
 
 COCOAPODS: 1.8.4
