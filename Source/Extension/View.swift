@@ -22,4 +22,18 @@ public extension NSView {
             return NSColor(cgColor: layer!.backgroundColor!) }
     }
 }
+
+#else
+import UIKit
+
+public extension UIView {
+    
+    /// Background Color
+    var bgColor: UIColor? {
+        
+        set { backgroundColor = newValue }
+        get { return backgroundColor }
+    }
+}
+
 #endif
