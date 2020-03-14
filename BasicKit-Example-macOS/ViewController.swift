@@ -26,20 +26,26 @@ class ViewController: NSViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let iv = NSImageView()
-        view.addSubview(iv, constraints: [.width(270), .height(270), .center()])
         
-        var qrModel = BKQR.Model(text: "https://www.yaozuopan.top", scale: 4, logo: "128")
-        qrModel.backgroundColor = NSColor.bk.gray(188)
-        qrModel.contentColor = .blue
-        
-        
-        let qr = BK.qr.create(qrModel)
-        
-        BKLog( qr!.size)
-        iv.image = qr
-        
-        BKLog(iv.image!.size)
+        BKLog("----")
+        async(delay: 2.5) {
+            BKLog("do----")
+
+        }
+//        let iv = NSImageView()
+//        view.addSubview(iv, constraints: [.width(270), .height(270), .center()])
+//
+//        var qrModel = BKQR.Model(text: "https://www.yaozuopan.top", scale: 4, logo: "128")
+//        qrModel.backgroundColor = NSColor.bk.gray(188)
+//        qrModel.contentColor = .blue
+//
+//
+//        let qr = BK.qr.create(qrModel)
+//
+//        BKLog( qr!.size)
+//        iv.image = qr
+//
+//        BKLog(iv.image!.size)
         
         //        let model = Model()
         //        model.name = "yaozuo"
