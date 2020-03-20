@@ -16,6 +16,8 @@
 		B90E172323C227F100AA85E2 /* BKSecurity.swift in Sources */ = {isa = PBXBuildFile; fileRef = B90E171F23C227F100AA85E2 /* BKSecurity.swift */; };
 		B922300E241CF29C005CABAC /* Async.swift in Sources */ = {isa = PBXBuildFile; fileRef = B922300D241CF29C005CABAC /* Async.swift */; };
 		B922300F241CF29C005CABAC /* Async.swift in Sources */ = {isa = PBXBuildFile; fileRef = B922300D241CF29C005CABAC /* Async.swift */; };
+		B96862D9242469BF0020FE97 /* Operator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96862D8242469BF0020FE97 /* Operator.swift */; };
+		B96862DA242469BF0020FE97 /* Operator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96862D8242469BF0020FE97 /* Operator.swift */; };
 		B97D7DB023BEBB3100B44267 /* BasicKit_iOS.h in Headers */ = {isa = PBXBuildFile; fileRef = B97D7DAE23BEBB3100B44267 /* BasicKit_iOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B97D7DC923BEBC6100B44267 /* BKUpgrade.swift in Sources */ = {isa = PBXBuildFile; fileRef = B97D7DB623BEBC6100B44267 /* BKUpgrade.swift */; };
 		B97D7DCA23BEBC6100B44267 /* BKApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B97D7DB723BEBC6100B44267 /* BKApp.swift */; };
@@ -137,6 +139,7 @@
 		B90E171E23C227F100AA85E2 /* BKSecurityCore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BKSecurityCore.swift; sourceTree = "<group>"; };
 		B90E171F23C227F100AA85E2 /* BKSecurity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BKSecurity.swift; sourceTree = "<group>"; };
 		B922300D241CF29C005CABAC /* Async.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Async.swift; sourceTree = "<group>"; };
+		B96862D8242469BF0020FE97 /* Operator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Operator.swift; sourceTree = "<group>"; };
 		B97D7DAC23BEBB3100B44267 /* BasicKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BasicKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B97D7DAE23BEBB3100B44267 /* BasicKit_iOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BasicKit_iOS.h; sourceTree = "<group>"; };
 		B97D7DAF23BEBB3100B44267 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -315,6 +318,7 @@
 			children = (
 				B97D7DBE23BEBC6100B44267 /* Array.swift */,
 				B97D7DBF23BEBC6100B44267 /* Data.swift */,
+				B96862D8242469BF0020FE97 /* Operator.swift */,
 				B97D7DC023BEBC6100B44267 /* Number.swift */,
 				B99DA39C23C2667B007D4488 /* View.swift */,
 				B97D7E1B23BF21FF00B44267 /* Dictionary.swift */,
@@ -674,6 +678,7 @@
 			files = (
 				B97D7DD923BEBC6100B44267 /* BKObject.swift in Sources */,
 				B9A44ECD23C0FAD500AE7308 /* BKNotify.swift in Sources */,
+				B96862D9242469BF0020FE97 /* Operator.swift in Sources */,
 				B99DA39A23C25D6B007D4488 /* Color.swift in Sources */,
 				B97D7E1C23BF21FF00B44267 /* Dictionary.swift in Sources */,
 				B922300E241CF29C005CABAC /* Async.swift in Sources */,
@@ -724,6 +729,7 @@
 			files = (
 				B9A44EBD23C0DF4700AE7308 /* Number.swift in Sources */,
 				B9A44ECE23C0FAD500AE7308 /* BKNotify.swift in Sources */,
+				B96862DA242469BF0020FE97 /* Operator.swift in Sources */,
 				B99DA39B23C25D6B007D4488 /* Color.swift in Sources */,
 				B9A44EB823C0DF4300AE7308 /* BKCacher.swift in Sources */,
 				B922300F241CF29C005CABAC /* Async.swift in Sources */,
