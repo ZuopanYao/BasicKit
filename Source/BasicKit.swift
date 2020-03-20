@@ -37,6 +37,7 @@ public struct BK {
     public static let notify = BKNotify()
     public static let security = BKSecurity.shared
     public static let qr = BKQR.shared
+    public static let timer = BKTimer.shared
     
     /// 通过 BKLog 打印的
     public static let logger = BKConsole.shared
@@ -132,3 +133,4 @@ extension Array: BasicKitCompatible { }
 extension URL: BasicKitCompatible { }
 extension BKType: BasicKitCompatible { }
 extension Color: BasicKitCompatible { }
+extension Date: BasicKitCompatible { }

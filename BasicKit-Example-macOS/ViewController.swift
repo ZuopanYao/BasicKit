@@ -30,32 +30,38 @@ class ViewController: NSViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        BKLog("start")
+        Queue.concurrent(tasks: [
+            {
+                sleep(4)
+                BKLog("完成1\(Thread.isMainThread)")
+            },
+            {
+                sleep(2)
+                BKLog("完成2\(Thread.isMainThread)")
+            },
+            {
+                sleep(1)
+                BKLog("完成3\(Thread.isMainThread)")
+            }
+            ], doneNotify: (.main, {
+                BKLog("完成所有\(Thread.isMainThread)")
+            }))
         
-        let btn = NSButton()
-        btn.click = (self, #selector(test))
-        
-        
-        "ldlldld" ~~ "^[kdkd]{1,}"
-        
-        BKLog("----")
-        async(delay: 2.5) {
-            BKLog("do----")
-
-        }
-//        let iv = NSImageView()
-//        view.addSubview(iv, constraints: [.width(270), .height(270), .center()])
-//
-//        var qrModel = BKQR.Model(text: "https://www.yaozuopan.top", scale: 4, logo: "128")
-//        qrModel.backgroundColor = NSColor.bk.gray(188)
-//        qrModel.contentColor = .blue
-//
-//
-//        let qr = BK.qr.create(qrModel)
-//
-//        BKLog( qr!.size)
-//        iv.image = qr
-//
-//        BKLog(iv.image!.size)
+        //        let iv = NSImageView()
+        //        view.addSubview(iv, constraints: [.width(270), .height(270), .center()])
+        //
+        //        var qrModel = BKQR.Model(text: "https://www.yaozuopan.top", scale: 4, logo: "128")
+        //        qrModel.backgroundColor = NSColor.bk.gray(188)
+        //        qrModel.contentColor = .blue
+        //
+        //
+        //        let qr = BK.qr.create(qrModel)
+        //
+        //        BKLog( qr!.size)
+        //        iv.image = qr
+        //
+        //        BKLog(iv.image!.size)
         
         //        let model = Model()
         //        model.name = "yaozuo"

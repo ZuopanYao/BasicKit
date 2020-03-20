@@ -18,6 +18,10 @@
 		B922300F241CF29C005CABAC /* Async.swift in Sources */ = {isa = PBXBuildFile; fileRef = B922300D241CF29C005CABAC /* Async.swift */; };
 		B96862D9242469BF0020FE97 /* Operator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96862D8242469BF0020FE97 /* Operator.swift */; };
 		B96862DA242469BF0020FE97 /* Operator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96862D8242469BF0020FE97 /* Operator.swift */; };
+		B96862DC242486A80020FE97 /* BKTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96862DB242486A80020FE97 /* BKTimer.swift */; };
+		B96862DD242486A80020FE97 /* BKTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96862DB242486A80020FE97 /* BKTimer.swift */; };
+		B96862E124249E630020FE97 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96862E024249E630020FE97 /* Date.swift */; };
+		B96862E224249E630020FE97 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96862E024249E630020FE97 /* Date.swift */; };
 		B97D7DB023BEBB3100B44267 /* BasicKit_iOS.h in Headers */ = {isa = PBXBuildFile; fileRef = B97D7DAE23BEBB3100B44267 /* BasicKit_iOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B97D7DC923BEBC6100B44267 /* BKUpgrade.swift in Sources */ = {isa = PBXBuildFile; fileRef = B97D7DB623BEBC6100B44267 /* BKUpgrade.swift */; };
 		B97D7DCA23BEBC6100B44267 /* BKApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B97D7DB723BEBC6100B44267 /* BKApp.swift */; };
@@ -75,6 +79,8 @@
 		B9A44ECE23C0FAD500AE7308 /* BKNotify.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9A44ECC23C0FAD500AE7308 /* BKNotify.swift */; };
 		B9A44ED323C1018500AE7308 /* BKConsole.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9A44ED223C1018500AE7308 /* BKConsole.swift */; };
 		B9A44ED423C1018500AE7308 /* BKConsole.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9A44ED223C1018500AE7308 /* BKConsole.swift */; };
+		B9B4574A2424E3DD0036EDCD /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B457492424E3DD0036EDCD /* Queue.swift */; };
+		B9B4574B2424E3DD0036EDCD /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B457492424E3DD0036EDCD /* Queue.swift */; };
 		B9DC16DD23C2419000D81310 /* BKType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9DC16DC23C2419000D81310 /* BKType.swift */; };
 		B9DC16DE23C2419000D81310 /* BKType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9DC16DC23C2419000D81310 /* BKType.swift */; };
 /* End PBXBuildFile section */
@@ -140,6 +146,8 @@
 		B90E171F23C227F100AA85E2 /* BKSecurity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BKSecurity.swift; sourceTree = "<group>"; };
 		B922300D241CF29C005CABAC /* Async.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Async.swift; sourceTree = "<group>"; };
 		B96862D8242469BF0020FE97 /* Operator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Operator.swift; sourceTree = "<group>"; };
+		B96862DB242486A80020FE97 /* BKTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BKTimer.swift; sourceTree = "<group>"; };
+		B96862E024249E630020FE97 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		B97D7DAC23BEBB3100B44267 /* BasicKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BasicKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B97D7DAE23BEBB3100B44267 /* BasicKit_iOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BasicKit_iOS.h; sourceTree = "<group>"; };
 		B97D7DAF23BEBB3100B44267 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -183,6 +191,7 @@
 		B9A44ECC23C0FAD500AE7308 /* BKNotify.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BKNotify.swift; sourceTree = "<group>"; };
 		B9A44ED223C1018500AE7308 /* BKConsole.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BKConsole.swift; sourceTree = "<group>"; };
 		B9A44ED523C1095C00AE7308 /* BasicKit-Example-macOSDebug.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "BasicKit-Example-macOSDebug.entitlements"; sourceTree = "<group>"; };
+		B9B457492424E3DD0036EDCD /* Queue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
 		B9DC16DC23C2419000D81310 /* BKType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BKType.swift; sourceTree = "<group>"; };
 		BCE38D1DE700D3FC248EC97D /* Pods-BasicKit-Example-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BasicKit-Example-iOS.release.xcconfig"; path = "Target Support Files/Pods-BasicKit-Example-iOS/Pods-BasicKit-Example-iOS.release.xcconfig"; sourceTree = "<group>"; };
 		C43B8CD3C57F4E5C17E4AD7C /* Pods_BasicKit_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BasicKit_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -305,6 +314,7 @@
 				B90E171E23C227F100AA85E2 /* BKSecurityCore.swift */,
 				B90E171F23C227F100AA85E2 /* BKSecurity.swift */,
 				B97D7DBA23BEBC6100B44267 /* BKCacher.swift */,
+				B96862DB242486A80020FE97 /* BKTimer.swift */,
 				B99DA39F23C2CFCC007D4488 /* BKQR.swift */,
 				B9A44ECC23C0FAD500AE7308 /* BKNotify.swift */,
 				B9A44ED223C1018500AE7308 /* BKConsole.swift */,
@@ -323,6 +333,8 @@
 				B99DA39C23C2667B007D4488 /* View.swift */,
 				B97D7E1B23BF21FF00B44267 /* Dictionary.swift */,
 				B922300D241CF29C005CABAC /* Async.swift */,
+				B9B457492424E3DD0036EDCD /* Queue.swift */,
+				B96862E024249E630020FE97 /* Date.swift */,
 				B97D7DC123BEBC6100B44267 /* String.swift */,
 				B9A44EC923C0F32C00AE7308 /* URL.swift */,
 				B99DA39923C25D6B007D4488 /* Color.swift */,
@@ -691,15 +703,18 @@
 				B97D7DCA23BEBC6100B44267 /* BKApp.swift in Sources */,
 				B97D7DCC23BEBC6100B44267 /* BKNetwork.swift in Sources */,
 				B97D7DC923BEBC6100B44267 /* BKUpgrade.swift in Sources */,
+				B9B4574A2424E3DD0036EDCD /* Queue.swift in Sources */,
 				B97D7DD723BEBC6100B44267 /* BasicKit.swift in Sources */,
 				B97D7DD023BEBC6100B44267 /* Array.swift in Sources */,
 				B99DA3A023C2CFCC007D4488 /* BKQR.swift in Sources */,
+				B96862DC242486A80020FE97 /* BKTimer.swift in Sources */,
 				B97D7DCB23BEBC6100B44267 /* BKScreen.swift in Sources */,
 				B97D7DD123BEBC6100B44267 /* Data.swift in Sources */,
 				B9A44ED323C1018500AE7308 /* BKConsole.swift in Sources */,
 				B9DC16DD23C2419000D81310 /* BKType.swift in Sources */,
 				B90E172223C227F100AA85E2 /* BKSecurity.swift in Sources */,
 				B99DA39D23C2667B007D4488 /* View.swift in Sources */,
+				B96862E124249E630020FE97 /* Date.swift in Sources */,
 				B97D7DCF23BEBC6100B44267 /* BKDevice.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -742,15 +757,18 @@
 				B9A44EC223C0DF4B00AE7308 /* BasicKit.swift in Sources */,
 				B9A44EB423C0DF4300AE7308 /* BKUpgrade.swift in Sources */,
 				B9A44EBB23C0DF4700AE7308 /* Array.swift in Sources */,
+				B9B4574B2424E3DD0036EDCD /* Queue.swift in Sources */,
 				B9A44EC023C0DF4B00AE7308 /* BKConfig.swift in Sources */,
 				B9A44EB623C0DF4300AE7308 /* BKScreen.swift in Sources */,
 				B99DA3A123C2CFCC007D4488 /* BKQR.swift in Sources */,
+				B96862DD242486A80020FE97 /* BKTimer.swift in Sources */,
 				B9A44EC323C0DF4B00AE7308 /* BKObject.swift in Sources */,
 				B9A44EBC23C0DF4700AE7308 /* Data.swift in Sources */,
 				B9A44ED423C1018500AE7308 /* BKConsole.swift in Sources */,
 				B9DC16DE23C2419000D81310 /* BKType.swift in Sources */,
 				B90E172323C227F100AA85E2 /* BKSecurity.swift in Sources */,
 				B99DA39E23C2667B007D4488 /* View.swift in Sources */,
+				B96862E224249E630020FE97 /* Date.swift in Sources */,
 				B9A44EBA23C0DF4300AE7308 /* BKDevice.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

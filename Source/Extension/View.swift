@@ -7,7 +7,8 @@
 //
 
 #if os(macOS)
-import AppKit
+import Cocoa
+typealias BKView = NSView
 
 public extension NSView {
     
@@ -39,8 +40,7 @@ public extension NSButton {
 
 #else
 import UIKit
-
-public typealias BKAction = (AnyObject?, Selector, UIControl.Event)
+typealias BKView = UIView
 
 public extension UIView {
     
@@ -84,3 +84,16 @@ public extension UIControl {
 }
 
 #endif
+
+public extension BKView {
+    
+    private static var subTagKey = "BKView.subTagKey"
+    var subTag: Int {
+        get {
+            return objc_getAssociatedObject(self, &BKView.subTagKey) as? Int ?? 0
+        }
+        set {
+            objc_setAssociatedObject(self, &BKView.subTagKey, newValue, objc_AssociationPolicy.OBJC_ASSOCIATION_ASSIGN)
+        }
+    }
+}

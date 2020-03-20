@@ -39,6 +39,13 @@ public extension URL {
             return _nameWithSuffix.joined(separator: ".")
         }
         
+        public var folder: String {
+            if base.pathExtension.count == 0 {
+                return base.lastPathComponent
+            }
+            
+            return base.pathComponents.suffix(2).first ?? ""
+        }
         
         public struct Size {
             
