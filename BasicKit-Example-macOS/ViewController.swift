@@ -23,9 +23,19 @@ class Model: BKType, Codable {
 
 class ViewController: NSViewController {
     
+    @objc func test () {
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
+        let btn = NSButton()
+        btn.click = (self, #selector(test))
+        
+        
+        "ldlldld" ~~ "^[kdkd]{1,}"
         
         BKLog("----")
         async(delay: 2.5) {

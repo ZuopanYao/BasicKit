@@ -23,7 +23,6 @@ class ViewController: UIViewController {
         //qrModel.backgroundColor = UIColor.bk.gray(188)
         qrModel.contentColor = .blue
         
-        
         let qr = BK.qr.create(qrModel)
         
         BKLog(qr!.scale, qr!.size)

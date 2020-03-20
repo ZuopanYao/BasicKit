@@ -18,7 +18,7 @@ precedencegroup RegularPrecedence {
 infix operator ~~: RegularPrecedence
 
 /// 正则表达式匹配
-func ~~(origin: String, regular: String) -> Bool {
+public func ~~(origin: String, regular: String) -> Bool {
     
     let predicate = NSPredicate(format: "SELF MATCHES %@", regular)
     return predicate.evaluate(with: origin)
