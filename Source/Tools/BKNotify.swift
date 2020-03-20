@@ -20,12 +20,16 @@ public class BKNotify {
     
     private let notification = NotificationCenter.default
     
-    public func remove(observer: Any,  name: BKNotify.Name? = nil, object: Any? = nil) {
-        
-        remove(observer: observer, name: Notification.Name(name!.rawValue), object: object)
+    public func remove(observer: Any) {
+        notification.removeObserver(observer)
     }
     
-    public func remove(observer: Any,  name: Notification.Name? = nil, object: Any? = nil) {
+    public func remove(observer: Any,  name: BKNotify.Name, object: Any? = nil) {
+        
+        remove(observer: observer, name: Notification.Name(name.rawValue), object: object)
+    }
+    
+    public func remove(observer: Any,  name: Notification.Name, object: Any? = nil) {
         
         notification.removeObserver(observer, name: name, object: object)
     }

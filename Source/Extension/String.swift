@@ -9,6 +9,15 @@
 import Foundation
 import CommonCrypto
 
+#if os(macOS)
+import AppKit
+public typealias Font = NSFont
+
+#else
+import UIKit
+public typealias Font = UIFont
+#endif
+
 // MARK: - Base64
 public extension BasicKit where Base == String {
     
@@ -103,6 +112,14 @@ public extension BasicKit where Base == String {
         }
         
         return "\(String(cString: ch).prefix(count))"
+    }
+    
+    func size(_ systemFontSize: CGFloat) -> CGSize {
+        return size(Font.systemFont(ofSize: systemFontSize))
+    }
+    
+    func size(_ font: Font) -> CGSize {
+        return (base as NSString).size(withAttributes: [NSAttributedString.Key.font : font])
     }
 }
 
