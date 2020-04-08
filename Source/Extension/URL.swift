@@ -31,6 +31,17 @@ public extension URL {
             return base.lastPathComponent
         }
         
+        public var isExists: Bool {
+            
+            if base.pathExtension.count == 0 {
+                
+                var isDirectory: ObjCBool = true
+                return FileManager.default.fileExists(atPath: base.path, isDirectory: &isDirectory)
+            }
+            
+            return FileManager.default.fileExists(atPath: base.path)
+        }
+        
         /// 不带后缀的文件名
         public var nameWithoutSuffix: String {
             
