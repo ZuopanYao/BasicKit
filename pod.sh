@@ -36,5 +36,5 @@ git push
 echo 'Done'
 
 # cocoapods specs
-pod trunk push "../$MODULE/$MODULE.podspec"
+pod trunk push "../$MODULE/$MODULE.podspec" --allow-warnings
 
