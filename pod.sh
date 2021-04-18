@@ -11,7 +11,7 @@ fi
 MODULE='BasicKit'
 SPECS='Specs'
 
-cp example.podspec $MODULE.podspec
+cp podspec.example $MODULE.podspec
 REPLACE=`sed "s/{v}/$1/g" $MODULE.podspec`
 echo "$REPLACE" > $MODULE.podspec
 
