@@ -37,7 +37,9 @@ public class BKUpgrade {
     public func check(callback: @escaping ((_ element: BKUpgrade.Model?) -> Void)){
 
         let url = lookupURL + BK.config.appId
-        request(url, method: .post).responseJSON { (response) in
+        
+        let session = Session.default
+        session.request(url, method: .post).responseJSON { (response) in
 
             if let error = response.error {
                 

@@ -33,14 +33,14 @@ public class BKDevice {
         
         DispatchQueue.global().asyncAfter(deadline: DispatchTime.now() + 8) {
             
-            let url = "https://raw.githubusercontent.com/ZuopanYao/BasicKit/master/BasicKit/Resources/BKDeviceModel.plist"
+            let url = "https://raw.githubusercontent.com/ZuopanYao/BasicKit/master/Source/Resources/BKDeviceModel.plist"
             
-            let destination: DownloadRequest.DownloadFileDestination =  { (url, response) -> (destinationURL: URL, options: DownloadRequest.DownloadOptions) in
-                
+            
+            let destination: DownloadRequest.Destination =  { (url, response) -> (destinationURL: URL, options: DownloadRequest.Options) in
                 return (URL(string: "file://\(BK.document)/BKDeviceModel.plist")!, .removePreviousFile)
             }
             
-            download(url, method: HTTPMethod.post, to: destination)
+            Session.default.download(url, method: HTTPMethod.post, to: destination).resume()
         }
     }
     

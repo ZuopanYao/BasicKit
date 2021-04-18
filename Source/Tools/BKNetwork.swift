@@ -31,14 +31,14 @@ public class BKNetwork {
         }
         
         networkReachabilityManager = _networkReachabilityManager
-        
-        networkReachabilityManager.listener = { (networkReachabilityStatus) in
-         
+        networkReachabilityManager.startListening { (networkReachabilityStatus) in
+
             BKLogv(networkReachabilityStatus)
             self.reachabilityStatusDidChange?()
         }
         
-        networkReachabilityManager.startListening()
+        
+       // networkReachabilityManager.startListening(, onUpdatePerforming: NetworkReachabilityManager.Listener)
     }
     
     func reachabilityStatus(_ status: NetworkReachabilityManager.NetworkReachabilityStatus) -> BKNetwork.`Type` {
@@ -55,7 +55,7 @@ public class BKNetwork {
             if networkReachabilityManager.isReachableOnEthernetOrWiFi {
                 return ._WiFi
             }
-            if networkReachabilityManager.isReachableOnWWAN {
+            if networkReachabilityManager.isReachableOnCellular {
                 return currentRadioAccessTechnology()
             }
         }
@@ -76,7 +76,7 @@ public class BKNetwork {
     
     public var type: BKNetwork.`Type` {
         
-        return self.reachabilityStatus(networkReachabilityManager.networkReachabilityStatus)
+        return self.reachabilityStatus(networkReachabilityManager.status)
     }
     
     public struct Carrier {
