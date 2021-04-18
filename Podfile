@@ -3,7 +3,7 @@
 use_frameworks!
 
 def commonPods
-  pod 'Alamofire'
+  pod 'Alamofire', '4.9.1'
   pod 'KeychainAccess'
 end
 

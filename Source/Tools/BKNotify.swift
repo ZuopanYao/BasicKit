@@ -44,7 +44,7 @@ public class BKNotify {
     
     public func addObserver(name: BKNotify.Name, object: Any? = nil, queue: OperationQueue? = nil, usingblock: @escaping (Notification) -> Void) {
         
-        _ = addObserver(name: Notification.Name(name.rawValue), object: object, queue: queue, usingblock: usingblock)
+        addObserver(name: Notification.Name(name.rawValue), object: object, queue: queue, usingblock: usingblock)
     }
     
     public func addObserver(name: NSNotification.Name, object: Any? = nil, queue: OperationQueue? = nil, usingblock: @escaping (Notification) -> Void) {
