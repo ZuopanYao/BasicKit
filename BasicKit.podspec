@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "BasicKit"
-  spec.version      = "1.0.6"
+  spec.version      = "1.0.7"
   spec.summary      = "MD5、Base64、数据缓存、app更新、app基本信息获取封装以及对Array、Dictionary、URL、String、基本数据类型等进行常用扩展，可运行在iOS、macOS上的基本库"
 
   # This description is used to generate tags and improve search results.
